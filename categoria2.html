@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Categoría 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      margin: 0;
+      padding-bottom: 120px;
+    }
+
+    /* Barra superior */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #2795d5;
+      padding: 10px 20px;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar .logo span {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: white;
+    }
+
+    .icons span {
+      cursor: default;
+    }
+
+    /* Menú principal */
+    header nav ul {
+      display: flex;
+      background-color: #2795d5;
+      justify-content: center;
+      padding: 10px;
+      list-style: none;
+      margin: 0;
+    }
+
+    header nav ul li {
+      margin: 0 15px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contenido */
+    main {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main h1 {
+      text-align: center;
+      color: #2795d5;
+    }
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .productos article {
+      background: #fdfdfd;
+      border: 1px solid #ccc;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .productos article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .productos article h2 {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .productos article p {
+      margin: 5px 0;
+    }
+
+    .productos article button {
+      margin-top: 10px;
+      background-color: #2795d5;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .productos article button:hover {
+      background-color: #1d77ab;
+    }
+
+    /* Pie de página */
+    footer {
+      background-color: #2795d5;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="img/Logo los Convoys.jpg" alt="Logo">
+      <span>SUPERMARCKET CONVOYS</span>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar productos...">
+    </div>
+    <div class="icons">
+      <span><i class="fas fa-bolt"></i> Entrega Rápida</span>
+      <span><i class="fas fa-store"></i> Retira en tiendas</span>
+      <span><i class="fas fa-box-open"></i> Entrega gratis desde Q250</span>
+    </div>
+  </div>
+
+  <!-- Menú principal -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categoria1.html">Categoría 1</a></li>
+        <li><a href="categoria2.html">Categoría 2</a></li>
+        <li><a href="categoria3.html">Categoría 3</a></li>
+        <li><a href="categoria4.html">Categoría 4</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="perfil.html">Mi Perfil</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido -->
+  <main>
+    <h1>Artículos de Limpieza</h1>
+    <section class="productos">
+      <article>
+        <img src="img/detergente en polvo fabuloso ambar.jpg" alt="Detergente">
+        <h2>Detergente en Polvo Fabuloso Ámbar Natural</h2>
+        <p>Precio por unidad</p>
+        <p>Precio: Q15.00</p>
+        <button>Agregar al carrito</button>
+      </article>
+
+      <article>
+        <img src="img/lavaplatos zagaz frutos rojos.jpg" alt="Lavaplatos">
+        <h2>Lavaplatos Zagaz Frutos Rojos</h2>
+        <p>Precio por paquete</p>
+        <p>Precio: Q11.50</p>
+        <button>Agregar al carrito</button>
+      </article>
+
+      <article>
+        <img src="img/limpiador liq fabuloso mar fresco.jpg" alt="Limpiador">
+        <h2>Limpiador Líquido Fabuloso Mar Fresco</h2>
+        <p>Precio por litro</p>
+        <p>Precio: Q18.00</p>
+        <button>Agregar al carrito</button>
+      </article>
+
+      <article>
+        <img src="img/Cloro Magia Blanca Galon.jpg" alt="Cloro">
+        <h2>Cloro Magia Blanca Galón Regular</h2>
+        <p>Precio por galón</p>
+        <p>Precio: Q22.25</p>
+        <button>Agregar al carrito</button>
+      </article>
+
+      <article>
+        <img src="img/aromatizante glade paraiso azul.jpg" alt="Aromatizante">
+        <h2>Aromatizante Glade Paraíso Azul</h2>
+        <p>Precio por unidad</p>
+        <p>Precio: Q20.00</p>
+        <button>Agregar al carrito</button>
+      </article>
+
+      <article>
+        <img src="img/cera olimpo liquida lavanda.jpg" alt="Cera">
+        <h2>Cera Olimpo Líquida Lavanda</h2>
+        <p>Precio por unidad</p>
+        <p>Precio: Q22.00</p>
+        <button>Agregar al carrito</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Rony Macario Alvarez Batz - Carné 3190-25-22507</p>
+    <p>Nestor Emanuel Morales Salazar - Carné 3190-25-10518</p>
+    <p>Rudy Bladimir Hernandez Cruz - Carné 3190-25-22174</p>
+  </footer>
+
+</body>
+</html>
